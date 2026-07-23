@@ -1,0 +1,6 @@
+{
+  "name": "AL IKHLAS KALTARA",
+  "description": "Aplikasi bel sekolah otomatis untuk Madrasah dengan audio kustom bahasa Arab, penjadwalan harian, mingguan, bulanan, sinkronisasi waktu NTP, log aktivitas, dan notifikasi push.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

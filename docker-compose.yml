@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  bel-madrasah-stb:
+    build: .
+    container_name: bel_madrasah_stb
+    restart: always
+    network_mode: "host" # Allows direct access to ZeroTier VPN interface & Local Audio ALSA/Pulse
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    devices:
+      - "/dev/snd:/dev/snd" # Audio card access for STB speakers
+    volumes:
+      - ./data:/app/data
+      - /var/lib/zerotier-one:/var/lib/zerotier-one
+    environment:
+      - PORT=2008
+      - NODE_ENV=production
