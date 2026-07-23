@@ -547,7 +547,7 @@ export default function App() {
                 <p className="text-emerald-400 text-[10px] leading-tight font-semibold mt-0.5">
                   Bell Digital Otomatis
                 </p>
-                <span className="text-emerald-500/60 text-[8px] font-mono tracking-widest block mt-1">v2.2 ARM64</span>
+                <span className="text-emerald-500/60 text-[8px] font-mono tracking-widest block mt-1">v3.0 ARM64 Standalone</span>
               </div>
             </div>
             {/* Mobile close button */}
@@ -591,7 +591,7 @@ export default function App() {
               }`}
             >
               <Settings2 className="w-5 h-5 shrink-0" />
-              <span>Suara & Keamanan</span>
+              <span>Pengaturan Aplikasi</span>
             </button>
 
             <button
@@ -981,24 +981,32 @@ export default function App() {
                       <img src={logoImg} alt="Logo" className="w-full h-full object-contain aspect-square" referrerPolicy="no-referrer" />
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold text-zinc-950 dark:text-zinc-50 leading-tight">
-                        AL IKHLAS KALTARA Bell Digital Otomatis
-                      </h2>
+                      <div className="flex items-center gap-2">
+                        <h2 className="text-xl font-bold text-zinc-950 dark:text-zinc-50 leading-tight">
+                          AL IKHLAS KALTARA Bell Digital Otomatis
+                        </h2>
+                        <span className="px-2 py-0.5 bg-emerald-600 text-white text-[10px] font-mono font-bold rounded-md">
+                          v3.0
+                        </span>
+                      </div>
                       <p className="text-xs text-zinc-400 mt-1">
-                        Sistem Penjadwalan Bel Otomatis Berbasis Audio Sintetis & Sinkronisasi Waktu Presisi Tinggi NTP.
+                        Sistem Penjadwalan Bel Otomatis Standalone STB dengan ZeroTier VPN & Mumble Audio Streaming Interlokal.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
+                          v3.0 Standalone Docker STB
+                        </span>
+                        <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
+                          ZeroTier VPN Interlokal
+                        </span>
+                        <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
+                          Mumble Audio Streaming
+                        </span>
                         <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
                           React 19 + TypeScript
                         </span>
                         <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
-                          Express.js Server Caching
-                        </span>
-                        <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
-                          Web Audio API Synthesis
-                        </span>
-                        <span className="px-2.5 py-0.5 bg-emerald-100/55 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 text-[10px] font-mono font-bold rounded-full border border-emerald-200/50 dark:border-emerald-900/30">
-                          Web Speech Synthesis (TTS)
+                          Express.js + Web Audio API
                         </span>
                       </div>
                     </div>
